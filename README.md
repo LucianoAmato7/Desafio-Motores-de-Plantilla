@@ -1,0 +1,1 @@
+Para mi proyecto prefiero el motor de plantillas de "pug" ya que de los 3 motores es el que me resulta más amigable. De todas formas no me abstrairía en usar el resto, ya que cada uno tiene lo suyo.

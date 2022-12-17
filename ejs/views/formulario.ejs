@@ -1,0 +1,34 @@
+<%- include('./encabezado')-%>
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1 style="color:blue;">Ingrese datos</h1>
+            <br/>
+
+            <form action="/productos" method="post">
+
+                <div class="form-group">
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" id="nombre" class="form-control" name="title">
+                </div>
+
+                <div class="form-group">
+                    <label for="Precio"><b>Precio</b></label>
+                    <input type="number" id="Precio" class="form-control" name="price">
+                </div>
+
+                <div class="form-group">
+                    <label for="URLImagen"><b>URL imagen</b></label>
+                    <input type="url" id="URLImagen" class="form-control" name="thumbnail">
+                </div>
+
+                <button type="submit" value="Enviar datos" class="btn btn-success mt-3 mb-5">Enviar</button>
+            </form>
+
+            <a href="/productos" method="GET" class="bg-primary text-white border rounded p-2">Vista de Productos</a>
+
+        </div>
+    </div>
+</body>
+
+<%- include('./pie') -%>

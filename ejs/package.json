@@ -1,0 +1,17 @@
+{
+    "type": "module",
+    "name": "ejs",
+    "version": "1.0.0",
+    "description": "Una api de productos",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo Error: no test specified  && exit ejs"
+    },
+    "keywords": [],
+    "author": "Luciano Amato",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.17.1"
+    }
+}

@@ -1,0 +1,36 @@
+<%- include('./encabezado')-%>
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1 style="color:blue;">Vista de Productos</h1>
+            <br/>
+            <% if(productos){ %>
+                <div class="table-responsive">
+                    <table class="table table-dark">
+                        <tr class="text-white fw-bold"> 
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                        </tr>
+                        <%productos.forEach(function(prod) { %>
+                            <tr>
+                                <td><%=prod.id%></td>
+                                <td><%=prod.title%></td>
+                                <td>$<%=prod.price%></td>
+                                <td>
+                                    <img src=<%=prod.thumbnail%> alt="Imagen de producto" style="width: 80px">
+                                </td>
+                            </tr>
+                            <%});%>
+                    </table>
+                </div>
+            <% } else { %>
+                <h3 class="alert alert-danger">No se encontraron productos</h3>
+            <% } %>
+            <br/>
+            <a href="/" method="GET" class="bg-primary text-white border rounded p-2">Formulario de carga</a>
+        </div>
+    </div>
+</body>
+<%- include('./pie') -%>
